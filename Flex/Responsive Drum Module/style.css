@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #d7ded3;
+  padding: 19.3em 0 16.7em;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 113.8%;
+  margin-bottom: 0.5em;
+  padding-right: 2em;
+}
+h2:nth-of-type(1) {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1.2em;
+}
+
+.link > h2 {
+  font-family: "Playfair Display", serif;
+  color: #406a29;
+  font-weight: 300;
+  margin-top: 3.7em;
+  margin-bottom: 6.6em;
+}
+
+.drumset {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4.1em 3.3em 10.4em 3.3em;
+}
+
+.drums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum:nth-of-type(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 759px) {
+  body {
+    margin: 19.3em 5.3em 16.7em 5.3em;
+  }
+
+  .drums {
+    gap: 2.9em;
+    justify-content: flex-end;
+  }
+
+  .drum:nth-of-type(4) {
+    display: block;
+  }
+
+  .drum:nth-of-type(2),
+  .drum:nth-of-type(3),
+  .drum:nth-of-type(1) {
+    flex-basis: calc(33.33% - 5.8em);
+  }
+}
+
+@media only screen and (min-width: 878px) {
+  body {
+    margin: 19.3em 12.2em 16.7em 11.8em;
+  }
+
+  .details {
+    position: relative;
+  }
+
+  .link > h2 {
+    position: absolute;
+    bottom: -128px;
+  }
+
+  .drums {
+    row-gap: 2.7em;
+  }
+
+  .drumset {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .drums {
+    max-width: 61em;
+  }
+}

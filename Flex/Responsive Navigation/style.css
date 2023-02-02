@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  background-color: hsl(210, 22%, 93%);
+}
+
+a {
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.sidepanel a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding: 0.44em 0.44em 0.44em 1.78em;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 30px;
+
+  font-size: 3.6rem;
+  right: 0.694em;
+  margin-left: 1.39em;
+}
+
+a:first-child {
+  font-weight: 700;
+}
+
+.sidepanel a:nth-of-type(1):hover {
+  color: red;
+}
+
+.sidepanel a:nth-of-type(2) {
+  font-weight: 700;
+}
+
+a:hover {
+  color: #0460bc;
+}
+
+.container {
+  margin-inline: auto;
+  width: 100%;
+}
+
+.links {
+  display: none;
+  gap: 3.6em;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  background-color: #dbe1e8;
+  padding: 3em 3em;
+}
+
+section {
+  padding: 9.7em 3em;
+}
+
+.cart {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.openbtn {
+  font-size: 2rem;
+  padding: 0.5em 0.75em;
+}
+rect:hover {
+  fill: #b5c0ce;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4em;
+}
+
+.line1 {
+  background-color: #dbe1e8;
+  width: 45.2em;
+  height: 3.5em;
+  border-radius: 4.5em;
+}
+
+.line2 {
+  background-color: #dbe1e8;
+  width: 29.6em;
+  height: 3.5em;
+  border-radius: 4.5em;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2.2em;
+}
+
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10em; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+@media only screen and (min-width: 800px) {
+  .links {
+    display: flex;
+  }
+  section,
+  header {
+    padding: 3em 12em;
+  }
+
+  button {
+    display: none;
+  }
+}

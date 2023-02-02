@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.first img {
+  max-width: 125%;
+  height: 125%;
+  top: -7.9em;
+}
+
+.second img {
+  max-width: 115%;
+  height: 115%;
+  top: -4.8em;
+  left: 2em;
+}
+
+.third img {
+  max-width: 135%;
+  height: 135%;
+  top: -11em;
+  right: -2em;
+}
+
+.img {
+  position: absolute;
+}
+
+body {
+  padding: 15em;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 100%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10.6em;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 31.8em;
+  max-width: 32.5em;
+  max-height: 31.8em;
+  border-radius: 2.5em;
+}
+
+.first {
+  background: #23bdff;
+}
+.second {
+  background: #ff237f;
+}
+.third {
+  background: #fff623;
+}
+
+@media only screen and (min-width: 1035px) {
+  .flex {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3.9em;
+  }
+
+  .flex {
+    height: 41.4em;
+  }
+
+  .box {
+    height: 22.2em;
+    max-width: 22.7em;
+  }
+
+  .first {
+    align-self: flex-start;
+  }
+
+  .first img {
+    top: -5.5em;
+  }
+
+  .second img {
+    top: -3.36em;
+    left: 1em;
+  }
+
+  .third img {
+    top: -7.8em;
+    right: -1em;
+  }
+  .second {
+    align-self: center;
+  }
+  .third {
+    align-self: flex-end;
+  }
+}

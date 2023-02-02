@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito';
+  margin: 11.4em 4.5em;
+  background-color: #dcf8f3;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 142.52%;
+  margin-bottom: 0.77em;
+}
+
+span {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 153.02%;
+}
+
+.box:nth-of-type(3) > p {
+  margin-bottom: 2em;
+}
+
+.box:nth-of-type(3) p {
+  padding: 0 1em;
+}
+
+.telco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  flex-wrap: wrap;
+}
+
+.box {
+  border-radius: 0.7em;
+  width: 33.7em;
+  padding: 3em;
+}
+
+.box:nth-of-type(1) {
+  background-color: white;
+}
+.box:nth-of-type(2) {
+  background-color: white;
+}
+.box:nth-of-type(3) {
+  background-color: transparent;
+  outline: 1px solid #8ca5a0;
+}
+
+@media only screen and (min-width: 834px) {
+  body {
+    margin: 12.5em 6.9em;
+  }
+
+  .telco {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .box:nth-of-type(3) {
+    flex-grow: 1;
+    max-width: 71.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box:nth-of-type(3) {
+    flex-grow: 1;
+    max-width: 71.2em;
+    height: 26.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+}
